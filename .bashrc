@@ -57,12 +57,10 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-
-# EXPORTS
-export EDITOR="nvim"
-export MANPAGER="nvim -c 'set ft=man' -"
-export TERM="xterm-256color"
-export TASKRC="~/.config/task/.taskrc"
 # aliases
 alias vim="nvim"
 alias ls="ls -a -sF --color=auto --group-directories-first"
+# EXPORTS
+export EDITOR="nvim"
+export TERM="xterm-256color"
+export TASKRC="~/.config/task/.taskrc"
