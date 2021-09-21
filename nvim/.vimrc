@@ -38,6 +38,8 @@ set shell=setbash
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 endif
+"Autosave
+au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | silent write | endif
 "Remap leader to Space
 let mapleader = "\<Space>"
 

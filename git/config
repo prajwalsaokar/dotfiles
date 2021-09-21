@@ -1,0 +1,10 @@
+[user]
+	email = prajwalsaokar@gmail.com
+	name = Prajwal Saokar
+[core]
+	editor = nvim
+[alias]
+	br = branch
+	st = status
+	a = add
+	coa = !git add -A && git commit -m
