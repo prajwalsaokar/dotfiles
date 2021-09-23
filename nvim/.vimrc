@@ -21,6 +21,8 @@ set backspace=indent,eol,start
 set belloff=all
 set complete-=i
 set display=lastline
+set tabstop=4
+set shiftwidth=4
 
 "Load vim-plug
 call plug#begin('~\.config\nvim\plugged')

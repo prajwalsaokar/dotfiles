@@ -60,9 +60,9 @@ ex ()
 # aliases
 alias vim="nvim"
 alias ls="ls -a -sF --color=auto --group-directories-first"
-alias tmux="script -c 'tmux -u' /dev/null"
 # EXPORTS
 export EDITOR="nvim"
 export TERM="xterm-256color"
 export TASKRC="~/.config/task/.taskrc"
+export MYVIFMRC="C:/Users/prajw/.config/vifm/vifmrc" 
 export MANPAGER="less"
