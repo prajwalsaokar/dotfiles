@@ -45,8 +45,9 @@ Plug 'romgrk/doom-one.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'tools-life/taskwiki'
 Plug 'goerz/jupytext.vim'
-Plug 'neovim/nvim-lspconfig'
-
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 call plug#end()
 "================================================
 "Telescope 
