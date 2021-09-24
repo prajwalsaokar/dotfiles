@@ -1,7 +1,6 @@
 [user]
 	email = prajwalsaokar@gmail.com
 	name = Prajwal Saokar
-	signingkey = 0EA42B6908EFF645
 [core]
 	editor = nvim
 [alias]
@@ -9,5 +8,3 @@
 	st = status
 	a = add
 	coa = !git add -A && git commit -m
-[commit]
-	gpgsign = true
