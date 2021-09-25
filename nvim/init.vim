@@ -48,6 +48,7 @@ Plug 'goerz/jupytext.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 "================================================
 "Telescope 
@@ -103,4 +104,4 @@ set undofile
 set undodir=$HOME/.vimundo
 "Vimwiki configuration
 let g:vimwiki_list = [{'path':'$HOME\Dropbox\wiki', 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}"=================Plugins========================
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}"
