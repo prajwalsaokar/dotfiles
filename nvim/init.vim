@@ -30,12 +30,13 @@ set backspace=indent,eol,start
 set belloff=all
 set complete-=i
 set display=lastline
-set tabstop=4
-set shiftwidth=4
+filetype plugin indent on
 
 inoremap jj <esc>
 inoremap <C-e> <C-o>de
 tnoremap <Esc> <C-\><C-n><CR>
+"Remap leader to Space
+let mapleader = "\<Space>"
 "===================PLUGINS=====================
 call plug#begin()
 Plug 'nvim-lua/plenary.nvim'
@@ -53,10 +54,11 @@ call plug#end()
 "================================================
 "Telescope 
 lua << EOF
-require('telescope').setup{
-  -- ...
-}
+	require('telescope').setup {
+		
+	}
 EOF
+
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
@@ -68,7 +70,7 @@ lua << EOF
     -- your configuration comes here
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
-  }
+	}
 EOF
 set shell=setbash
 if maparg('<C-L>', 'n') ==# ''
@@ -76,8 +78,6 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 "Autosave
 au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | silent write | endif
-"Remap leader to Space
-let mapleader = "\<Space>"
 
 "clipboard
 set clipboard+=unnamedplus
