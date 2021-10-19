@@ -8,3 +8,5 @@
 	st = status
 	a = add
 	coa = !git add -A && git commit -m
+[http]
+	sslBackend = openssl
