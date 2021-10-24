@@ -56,6 +56,7 @@ Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'mfussenegger/nvim-dap'
 Plug 'williamboman/nvim-lsp-installer'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
 call plug#end()
 "================================================
 
